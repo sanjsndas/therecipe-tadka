@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie Policy – The RecipeTadka</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Baloo Bhai 2 and Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles for the specified fonts and colors */
+        body {
+            font-family: 'Inter', sans-serif; /* Default font */
+            background-color: #FFF8E1; /* Light cream background for warmth */
+            color: #333;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Baloo Bhai 2', sans-serif; /* Headings font */
+        }
+        .text-sizzling-orange { color: #FF7043; }
+        .bg-sizzling-orange { background-color: #FF7043; }
+        .text-curry-leaf-green { color: #689F38; }
+        .bg-curry-leaf-green { background-color: #689F38; }
+        .text-turmeric-yellow { color: #FFEB3B; }
+        .bg-turmeric-yellow { background-color: #FFEB3B; }
+        .border-sizzling-orange { border-color: #FF7043; }
+        .border-curry-leaf-green { border-color: #689F38; }
+        .border-turmeric-yellow { border-color: #FFEB3B; }
+
+        /* Custom scrollbar for a touch of style */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #FF7043;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #E65100;
+        }
+
+        /* Cookie Consent Dialog Box */
+        #cookie-consent-dialog {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            color: white;
+            padding: 1.5rem;
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            border-top-left-radius: 1rem;
+            border-top-right-radius: 1rem;
+        }
+        @media (min-width: 768px) {
+            #cookie-consent-dialog {
+                flex-direction: row;
+                justify-content: space-between;
+                padding-left: 2.5rem;
+                padding-right: 2.5rem;
+                border-top-left-radius: 1.5rem;
+                border-top-right-radius: 1.5rem;
+            }
+        }
+        #cookie-consent-dialog p {
+            margin-bottom: 1rem;
+            max-width: 900px;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+        @media (min-width: 768px) {
+            #cookie-consent-dialog p {
+                margin-bottom: 0;
+                text-align: left;
+                margin-right: 2rem;
+            }
+        }
+        #cookie-consent-dialog .cookie-buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        #cookie-consent-dialog button {
+            padding: 0.75rem 1.5rem;
+            border-radius: 9999px; /* Full rounded */
+            font-weight: bold;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        #cookie-consent-dialog .accept-button {
+            background-color: #FF7043; /* Sizzling Orange */
+            color: white;
+            border: 2px solid #FF7043;
+        }
+        #cookie-consent-dialog .accept-button:hover {
+            background-color: #E65100; /* Darker Orange */
+            border-color: #E65100;
+            transform: translateY(-2px);
+        }
+        #cookie-consent-dialog .decline-button {
+            background-color: transparent;
+            color: #FF7043; /* Sizzling Orange */
+            border: 2px solid #FF7043;
+        }
+        #cookie-consent-dialog .decline-button:hover {
+            background-color: #FF7043;
+            color: white;
+            transform: translateY(-2px);
+        }
+        #cookie-consent-dialog .learn-more-button {
+            background-color: transparent;
+            color: #689F38; /* Curry Leaf Green */
+            border: 2px solid #689F38;
+        }
+        #cookie-consent-dialog .learn-more-button:hover {
+            background-color: #689F38;
+            color: white;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col">
+    <!-- Header Section -->
+    <header class="bg-white shadow-lg py-4 px-6 md:px-12 flex flex-col md:flex-row justify-between items-center rounded-b-xl">
+        <!-- Logo Idea: A ladle pouring tadka into a simmering pot (with little sizzle sparks) -->
+        <div class="flex items-center mb-4 md:mb-0">
+            <svg class="w-12 h-12 text-sizzling-orange mr-3" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM11 7h2v6h-2zm0 8h2v2h-2z"/>
+                <path d="M12 4c-4.41 0-8 3.59-8 8s3.59 8 8 8 8-3.59 8-8-3.59-8-8-8zm0 14c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6zM11 7h2v6h-2zm0 8h2v2h-2z"/>
+                <path d="M16 10c.55 0 1-.45 1-1s-.45-1-1-1-1 .45-1 1 .45 1 1 1zm-8 0c.55 0 1-.45 1-1s-.45-1-1-1-1 .45-1 1 .45 1 1 1zM12 6c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6zm0 10c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z"/>
+                <path d="M12 10c.55 0 1-.45 1-1s-.45-1-1-1-1 .45-1 1 .45 1 1 1z"/>
+                <!-- Ladle -->
+                <path d="M19 12h-2V7c0-2.21-1.79-4-4-4s-4 1.79-4 4v5H5c-1.1 0-2 .9-2 2s.9 2 2 2h14c1.1 0 2-.9 2-2s-.9-2-2-2zM13 7c0-1.1.9-2 2-2s2 .9 2 2v5h-4V7z"/>
+                <!-- Sizzle sparks -->
+                <circle cx="20" cy="8" r="1.5" fill="#FFEB3B"/>
+                <circle cx="21" cy="11" r="1" fill="#FFEB3B"/>
+                <circle cx="18" cy="6" r="1" fill="#FFEB3B"/>
+            </svg>
+            <h1 class="text-3xl font-extrabold text-sizzling-orange tracking-tight">The RecipeTadka</h1>
+        </div>
+        <!-- Navigation -->
+        <nav>
+            <ul class="flex flex-wrap justify-center md:justify-end space-x-4 md:space-x-6 text-lg font-medium">
+                <li><a href="index.html" class="text-gray-700 hover:text-sizzling-orange transition duration-300 ease-in-out px-3 py-2 rounded-lg hover:bg-turmeric-yellow/20">Home</a></li>
+                <li><a href="blog.html" class="text-gray-700 hover:text-sizzling-orange transition duration-300 ease-in-out px-3 py-2 rounded-lg hover:bg-turmeric-yellow/20">Blog</a></li>
+                <li><a href="privacy.html" class="text-gray-700 hover:text-sizzling-orange transition duration-300 ease-in-out px-3 py-2 rounded-lg hover:bg-turmeric-yellow/20">Privacy</a></li>
+                <li><a href="terms.html" class="text-gray-700 hover:text-sizzling-orange transition duration-300 ease-in-out px-3 py-2 rounded-lg hover:bg-turmeric-yellow/20">Terms</a></li>
+                <li><a href="cookies.html" class="text-gray-700 hover:text-sizzling-orange transition duration-300 ease-in-out px-3 py-2 rounded-lg hover:bg-turmeric-yellow/20">Cookies</a></li>
+                <li><a href="contact.html" class="text-gray-700 hover:text-sizzling-orange transition duration-300 ease-in-out px-3 py-2 rounded-lg hover:bg-turmeric-yellow/20">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="flex-grow container mx-auto px-4 py-8 md:py-12">
+
+        <!-- Cookie Policy Hero Section -->
+        <section class="relative bg-gradient-to-br from-turmeric-yellow to-yellow-600 rounded-3xl shadow-xl overflow-hidden mb-16 p-8 md:p-16 text-gray-800 text-center">
+            <div class="absolute inset-0 bg-cover bg-center opacity-70" ></div>
+            <div class="relative z-10">
+                <h2 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4 drop-shadow-lg">Our Cookie Policy: Enhancing Your Sizzling Experience</h2>
+                <p class="text-lg md:text-xl mb-8 max-w-3xl mx-auto font-light leading-relaxed">
+                    At The RecipeTadka, we use cookies and similar technologies to provide you with a seamless, personalized, and delightful browsing experience. This Cookie Policy explains what cookies are, how we use them, the types of cookies we employ, and how you can manage your preferences. We are committed to transparency and ensuring you have control over your data.
+                </p>
+            </div>
+        </section>
+
+        <!-- Cookie Policy Content -->
+        <section class="p-6 md:p-10 bg-white rounded-3xl shadow-lg">
+            <h3 class="text-3xl md:text-4xl font-bold text-sizzling-orange mb-8 text-center">The RecipeTadka Cookie Policy</h3>
+
+            <div class="space-y-8 text-gray-700 text-lg leading-relaxed">
+                <p>
+                    <strong>Effective Date: July 10, 2025</strong>
+                </p>
+
+                <h4 class="text-2xl md:text-3xl font-bold text-curry-leaf-green mt-10 mb-4">1. Introduction to Cookies & Scope</h4>
+
+                <h5 class="text-xl md:text-2xl font-bold text-sizzling-orange mt-6 mb-3">1.1. Purpose of this Cookie Policy</h5>
+                <p>
+                    This Cookie Policy serves as a comprehensive guide to inform you about the use of cookies and similar technologies on The RecipeTadka website. Our primary goal is to ensure full transparency regarding the data collected through these technologies and how that data is utilized to enhance your experience. We believe in empowering our users with knowledge, enabling you to make informed decisions about your privacy. This policy complements our main Privacy Policy, providing specific details about cookies, pixel tags, web beacons, and other tracking mechanisms that may be deployed when you interact with our digital platform. Understanding this policy will help you navigate our site with confidence, knowing how your browsing preferences contribute to a more personalized and efficient culinary journey.
+                </p>
+
+                <h5 class="text-xl md:text-2xl font-bold text-sizzling-orange mt-6 mb-3">1.2. Scope of Application</h5>
+                <p>
+                    This Cookie Policy applies to all users and visitors of The RecipeTadka website, accessible at <a href="https://www.recipetadka.com" class="text-sizzling-orange hover:underline">www.recipetadka.com</a>, and any other subdomains or related services where this policy is linked or referenced. It covers all forms of interaction with our site, whether you are browsing recipes, creating an account, submitting content, or simply exploring our blog. The policy extends to data collected via desktop computers, laptops, tablets, mobile phones, and any other devices used to access our digital content. We aim to provide a consistent and clear understanding of our cookie practices across all platforms and user interactions, ensuring that regardless of how you access our services, your data privacy is handled with the same level of care and transparency.
+                </p>
+
+                <h5 class="text-xl md:text-2xl font-bold text-sizzling-orange mt-6 mb-3">1.3. Your Consent to Cookies</h5>
+                <p>
+                    By continuing to browse and use The RecipeTadka website after seeing our cookie consent banner, you are acknowledging and consenting to our use of cookies as described in this policy. We provide a clear and prominent consent mechanism upon your first visit, allowing you to accept all cookies, customize your preferences, or decline non-essential cookies. Your consent is crucial for us to deploy certain types of cookies, particularly those related to analytics, personalization, and advertising. We respect your choice and provide you with tools to manage your preferences at any time. Should you choose to withdraw your consent or modify your settings, instructions are provided within this policy and through your browser settings, ensuring that your preferences are always respected.
+                </p>
+
+                <h5 class="text-xl md:text-2xl font-bold text-sizzling-orange mt-6 mb-3">1.4. Updates to this Policy</h5>
+                <p>
+                    The digital landscape and regulatory requirements are constantly evolving, and as such, our Cookie Policy may be updated periodically to reflect changes in our practices, technologies, or legal obligations. We reserve the right to modify this policy at any time without prior notice. Any changes will become effective immediately upon posting the revised policy on this page, indicated by an updated "Effective Date" at the top. We encourage you to review this Cookie Policy regularly to stay informed about how we are using cookies and protecting your information. Your continued use of the Site after any modifications to this policy will constitute your acknowledgment and acceptance of the updated terms. For significant changes, we may also provide more prominent notice, such as through a banner on our website or direct email communication.
+                </p>
+
+                <h4 class="text-2xl md:text-3xl font-bold text-curry-leaf-green mt-10 mb-4">2. Understanding Cookies: The Digital Crumbs</h4>
+
+                <h5 class="text-xl md:text-2xl font-bold text-sizzling-orange mt-6 mb-3">2.1. Definition of a Cookie</h5>
+                <p>
+                    A cookie is a small text file that a website, when visited by a user, asks your browser to store on your device (computer, tablet, or mobile phone) to remember information about you, such as your language preference or login information. These files are typically very small and contain a unique identifier that allows the website to recognize your browser on subsequent visits. Cookies are not programs and cannot carry viruses or install malware. They are simply data packets that enable websites to provide a more tailored and efficient experience by remembering your past interactions and preferences. Think of them as digital bookmarks or memory tags that help the website recall your previous actions and settings, making your next visit smoother and more convenient.
+                </p>
+
+                <h5 class="text-xl md:text-2xl font-bold text-sizzling-orange mt-6 mb-3">2.2. How Cookies Work (Technical Explanation)</h5>
+                <p>
+                    When you visit a website, the website sends a cookie to your browser. Your browser then stores this cookie on your device. The next time you visit the same website, your browser sends the cookie back to the website. This allows the website to recognize your device and retrieve information about your previous activities or preferences. For example, if you log into an account, a cookie might store your session ID, so you don't have to log in again on every page. If you add items to a shopping cart, a cookie can remember those items even if you navigate away. This seamless interaction is facilitated by the exchange of these small data files between your browser and the website's server, creating a persistent, yet anonymous, connection that enhances usability.
+                </p>
+
+                <h5 class="text-xl md:text-2xl font-bold text-sizzling-orange mt-6 mb-3">2.3. Cookie Lifespan (Session vs. Persistent)</h5>
+                <p>
+                    Cookies can be categorized based on their lifespan: session cookies and persistent cookies. **Session cookies** are temporary and are automatically deleted from your device when you close your web browser. They are used to remember your activities during a single browsing session, such as keeping you logged in or remembering items in a shopping cart. Once the browser is closed, the session cookie expires. **Persistent cookies**, on the other hand, remain on your device for a set period (which can range from a few minutes to several years) or until you manually delete them. These cookies are used to remember your preferences or actions across multiple browsing sessions, such as remembering your login details for future visits or recalling your site preferences. The duration of a persistent cookie is determined by its creator and is often configurable.
+                </p>
+
+                <h5 class="text-xl md:text-2xl font-bold text-sizzling-orange mt-6 mb-3">2.4. Cookie Storage Location</h5>
+                <p>
+                    Cookies are stored locally on your device, typically within your web browser's data directory. The exact location varies depending on your operating system and the browser you are using (e.g., Chrome, Firefox, Safari, Edge). They are not stored on the website's server directly, but rather, the server sends instructions to your browser to create and manage these files. This local storage allows the website to retrieve your specific preferences and data when you revisit, without needing to store large amounts of user-specific information on its own servers. This distributed storage model enhances efficiency and privacy, as each cookie is generally tied to a specific domain and can only be accessed by that domain.
+                </p>
+
+                <h4 class="text-2xl md:text-3xl font-bold text-curry-leaf-green mt-10 mb-4">3. Types of Cookies Used by The RecipeTadka</h4>
+
+                <h5 class="text-xl md:text-2xl font-bold text-sizzling-orange mt-6 mb-3">3.1. Strictly Necessary Cookies (Essential Functionality)</h5>
+                <p>
+                    These cookies are absolutely essential for the RecipeTadka website to function correctly. Without these cookies, certain core functionalities, such as navigating between pages, accessing secure areas of the site (like your account dashboard), or submitting forms, would not be possible. They enable fundamental services like user authentication, session management, and security features. For example, a strictly necessary cookie might remember that you are logged in, preventing you from having to log in on every new page. These cookies do not collect any personal information for marketing purposes and are typically set only in response to actions made by you which amount to a request for services, such as setting your privacy preferences, logging in, or filling in forms. Because they are vital for the website's operation, they cannot be switched off in our systems.
+                </p>
+
+                <h5 class="text-xl md:text-2xl font-bold text-sizzling-orange mt-6 mb-3">3.2. Performance Cookies (Analytics & Site Improvement)</h5>
+                <p>
+                    Performance cookies, also known as analytics cookies, collect information about how visitors use our website, such as which pages are visited most often, how long users spend on each page, and if they encounter any error messages. This data is aggregated and anonymous, meaning it cannot be used to identify individual users. The sole purpose of these cookies is to help us understand and improve how our website performs. For instance, by analyzing user paths, we can identify areas where navigation might be confusing or content is not engaging, allowing us to optimize the user experience. This data is crucial for continuous improvement, helping us to deliver a more efficient, user-friendly, and content-rich platform for all our culinary enthusiasts.
+                </p>
+
+                <h5 class="text-xl md:text-2xl font-bold text-sizzling-orange mt-6 mb-3">3.3. Functionality Cookies (Personalization & Preferences)</h5>
+                <p>
+                    Functionality cookies allow The RecipeTadka website to remember choices you make (such as your username, language, or the region you are in) and provide enhanced, more personalized features. For example, if you set a preference for metric measurements in recipes, these cookies will remember that choice for your next visit. They can also be used to remember changes you have made to text size, fonts, and other customizable parts of web pages. These cookies are designed to improve your user experience by making your interactions with our site more convenient and tailored to your specific needs. While they do not track your browsing activity on other websites, the information collected by these cookies may be anonymized and cannot be used to track your browsing activity on other websites.
+                </p>
+
+                <h5 class="text-xl md:text-2xl font-bold text-sizzling-orange mt-6 mb-3">3.4. Targeting/Advertising Cookies (Relevant Ads)</h5>
+                <p>
+                    Targeting or advertising cookies are used to deliver advertisements that are more relevant to you and your interests. They are often placed by third-party advertising networks with our permission. These cookies remember that you have visited our website and may share this information with other organizations, such as advertisers. This allows them to build a profile of your interests and show you relevant ads on other sites. For example, if you browse Indian recipes on our site, you might see ads for Indian spices or cooking tools on other websites you visit. They also help limit the number of times you see an advertisement and measure the effectiveness of advertising campaigns. While these cookies enhance the relevance of ads you see, you have the option to opt out of them, as detailed in the "Managing Your Cookie Preferences" section.
+                </p>
+
+                <h5 class="text-xl md:text-2xl font-bold text-sizzling-orange mt-6 mb-3">3.5. Social Media Cookies (Integration & Sharing)</h5>
+                <p>
+                    Social media cookies are set by a range of social media services that we have added to the site to enable you to share our content with your friends and networks. These cookies are capable of tracking your browser across other sites and building up a profile of your interests. This may impact the content and messages you see on other websites you visit. For example, if you click a "Share" button for a recipe on our site, the social media platform (e.g., Facebook, Instagram, Pinterest) may place a cookie on your device to track that interaction and potentially show you related content or ads on their platform. If you do not allow these cookies, you may not be able to use or see these sharing tools. We integrate these features to enhance user engagement and facilitate the sharing of our culinary content within social communities.
+                </p>
+
+                <h4 class="text-2xl md:text-3xl font-bold text-curry-leaf-green mt-10 mb-4">4. Detailed Purposes of Cookies (Elaborated)</h4>
+
+                <h5 class="text-xl md:text-2xl font-bold text-sizzling-orange mt-6 mb-3">4.1. Authentication and Security (Login Sessions)</h5>
+                <p>
+                    Cookies play a critical role in user authentication and maintaining the security of your login sessions on The RecipeTadka. When you log into your account, a session cookie is typically created and stored on your device. This cookie contains a unique identifier that allows our server to recognize you as an authenticated user as you navigate through different pages of the website. This means you don't have to re-enter your login credentials every time you click on a new recipe or access your profile. Beyond convenience, these cookies also contribute to security by helping us detect and prevent unauthorized access to your account. They ensure that only the legitimate account holder can access sensitive information or perform actions within their logged-in session, thereby protecting your personal data and maintaining the integrity of your user experience.
+                </p>
+
+                <h5 class="text-xl md:text-2xl font-bold text-sizzling-orange mt-6 mb-3">4.2. Remembering User Preferences (Language, Layout)</h5>
+                <p>
+                    Functionality cookies are instrumental in remembering your preferences to customize your experience on The RecipeTadka. For instance, if you select a preferred language for viewing the website, a cookie will store this choice so that the site automatically loads in your chosen language on subsequent visits. Similarly, if we offer options for different layout views (e.g., grid vs. list for recipes) or accessibility settings (like font size), cookies will retain these preferences. This saves you the effort of re-selecting your settings each time you visit, contributing to a more seamless and user-friendly interaction. These cookies are designed to enhance your personal comfort and efficiency while browsing our culinary content, making your journey with us as enjoyable and tailored as possible.
+                </p>
+
+                <h5 class="text-xl md:text-2xl font-bold text-sizzling-orange mt-6 mb-3">4.3. Shopping Cart Functionality (Hypothetical for Future Features)</h5>
+                <p>
+                    Although The RecipeTadka currently focuses on recipes and content, if we were to introduce e-commerce features in the future, such as a merchandise store or premium recipe subscriptions, cookies would be vital for shopping cart functionality. These cookies would allow you to add items to your cart and keep them there as you continue browsing the site, even if you navigate to different pages or leave the site temporarily. Without cookies, your cart would empty every time you moved to a new page, making the shopping experience impractical. These cookies ensure that your selected items persist throughout your shopping journey, providing a smooth and convenient checkout process. They are essential for any e-commerce platform to track user selections before a purchase is completed.
+                </p>
+
+                <h5 class="text-xl md:text-2xl font-bold text-sizzling-orange mt-6 mb-3">4.4. Website Analytics and Performance Measurement</h5>
+                <p>
+                    Performance and analytics cookies are crucial for us to understand how our website is performing and how users interact with it. These cookies collect anonymous data on metrics such as page load times, bounce rates, popular content, and user navigation paths. By analyzing this aggregated data, we can identify bottlenecks, optimize server responses, and improve the overall technical performance of the site. This allows us to ensure that The RecipeTadka is fast, responsive, and reliable for all users. For example, if a particular page has a high bounce rate, analytics data helps us investigate potential issues with its content or design. This continuous measurement and analysis are fundamental to maintaining a high-quality user experience and ensuring our site remains a top-tier culinary resource.
+                </p>
+
+                <h5 class="text-xl md:text-2xl font-bold text-sizzling-orange mt-6 mb-3">4.5. Understanding User Behavior (Heatmaps, Clicks)</h5>
+                <p>
+                    Beyond basic page views, some analytics cookies and related technologies allow us to gain deeper insights into user behavior through tools like heatmaps and click tracking. Heatmaps visually represent where users click, scroll, and spend the most time on a page, indicating areas of interest or confusion. Click tracking records the specific elements users interact with. This granular data helps us understand how users engage with our content, identify areas of high engagement, and pinpoint elements that might be overlooked. For example, if a recipe instruction is consistently skipped, it might indicate a need for clearer phrasing or better visual cues. These insights are invaluable for optimizing content placement, improving user interface design, and ensuring that our recipes and features are as intuitive and engaging as possible.
+                </p>
+
+                <h5 class="text-xl md:text-2xl font-bold text-sizzling-orange mt-6 mb-3">4.6. Troubleshooting and Error Reporting</h5>
+                <p>
+                    Cookies and similar tracking technologies are vital for identifying and troubleshooting technical issues on The RecipeTadka website. When a user encounters an error, certain cookies can log information about the error, the browser type, and the page where the error occurred. This data, often anonymized or pseudonymized, helps our technical team diagnose problems quickly and efficiently. For example, if a specific browser version consistently triggers a display error, these cookies help us pinpoint the compatibility issue. This proactive error reporting and analysis ensure that we can maintain a stable and reliable platform, minimizing downtime and providing a smooth experience for all users. It's a crucial aspect of our commitment to operational excellence and user satisfaction.
+                </p>
+
+                <h5 class="text-xl md:text-2xl font-bold text-sizzling-orange mt-6 mb-3">4.7. Personalized Content Delivery (Recipe Recommendations)</h5>
+                <p>
+                    Personalization is a core aspect of The RecipeTadka experience, and cookies are fundamental to delivering tailored content. By tracking your browsing history, such as the types of recipes you view most frequently (e.g., "Everyday Zaika," "Fusion Tadka"), the ingredients you search for, or the spice levels you prefer, cookies enable us to offer personalized recipe recommendations. This means that when you return to the site, you might see suggestions for dishes that align with your past interests, making it easier to discover new favorites. This personalized approach enhances engagement and helps you explore our vast culinary library more efficiently, ensuring that the content you see is always relevant and inspiring to your unique tastes.
+                </p>
+
+                <h5 class="text-xl md:text-2xl font-bold text-sizzling-orange mt-6 mb-3">4.8. Marketing Campaign Effectiveness Measurement</h5>
+                <p>
+                    Advertising and marketing cookies are used to measure the effectiveness of our promotional campaigns. These cookies help us understand which advertisements or marketing channels led you to our website, whether you completed a desired action (e.g., signed up for a newsletter, viewed a specific recipe), and the overall return on investment of our marketing efforts. This data allows us to optimize our advertising spend, refine our marketing strategies, and deliver more relevant messages to potential users. For example, if an ad campaign on a specific social media platform results in high engagement on our site, we can allocate more resources to that channel. This measurement is crucial for our business growth and for ensuring that our marketing efforts are efficient and impactful.
+                </p>
+
+                <h5 class="text-xl md:text-2xl font-bold text-sizzling-orange mt-6 mb-3">4.9. Retargeting and Remarketing Campaigns</h5>
+                <p>
+                    Targeting cookies enable us to run retargeting or remarketing campaigns. These campaigns are designed to show you relevant advertisements on other websites or platforms after you have visited The RecipeTadka. For example, if you browsed our "Sweet Cravings" section but didn't sign up for our newsletter, you might later see an ad on a social media site promoting our dessert recipes or a special offer for newsletter subscribers. These cookies help us re-engage users who have shown interest in our content, reminding them of our offerings and encouraging them to return. While this involves tracking your browsing activity across different sites, it's done with the aim of delivering more personalized and potentially useful advertisements, rather than generic ones.
+                </p>
+
+                <h5 class="text-xl md:text-2xl font-bold text-sizzling-orange mt-6 mb-3">4.10. A/B Testing and Feature Optimization</h5>
+                <p>
+                    Cookies are frequently used in A/B testing, a method of comparing two versions of a webpage or app feature to see which one performs better. For example, we might show half of our users a slightly different layout for a recipe page (Version A) and the other half a different layout (Version B). Cookies ensure that a user consistently sees the same version throughout their visit, allowing us to accurately measure which version leads to better engagement, longer visit times, or higher conversion rates (e.g., newsletter sign-ups). This data-driven approach helps us continuously optimize our website's design, features, and content to provide the most effective and enjoyable user experience possible. It's a key tool in our ongoing efforts to refine and enhance The RecipeTadka.
+                </p>
+
+                <h5 class="text-xl md:text-2xl font-bold text-sizzling-orange mt-6 mb-3">4.11. Fraud Prevention and Detection</h5>
+                <p>
+                    In the interest of maintaining a secure and trustworthy environment, certain cookies are employed for fraud prevention and detection. These cookies can help us identify suspicious activities, such as multiple login attempts from unusual locations or automated bot behavior. They collect data points like IP addresses, device fingerprints, and browsing patterns that, when analyzed, can flag potential fraudulent transactions or malicious attacks. While these cookies do not directly track personal identifying information for this purpose, they contribute to a robust security framework that protects both our platform and our users from cyber threats. This proactive measure is essential for ensuring the integrity of our services and safeguarding your interactions on The RecipeTadka.
+                </p>
+
+                <h5 class="text-xl md:text-2xl font-bold text-sizzling-orange mt-6 mb-3">4.12. Spam Prevention (e.g., in Comment Sections)</h5>
+                <p>
+                    To maintain the quality and integrity of user-generated content, particularly in comment sections on our blog or recipe pages, cookies can be used as part of our spam prevention measures. These cookies, often in conjunction with CAPTCHA or other verification tools, help distinguish legitimate user activity from automated spam bots. They may track patterns of behavior that are indicative of bot activity, such as rapid-fire submissions or unusual navigation sequences. By identifying and blocking spam, these cookies help ensure that our community forums remain clean, relevant, and valuable for all users, fostering genuine interaction and discussion around our culinary content. This contributes to a positive and trustworthy environment on The RecipeTadka.
+                </p>
+
+                <h5 class="text-xl md:text-2xl font-bold text-sizzling-orange mt-6 mb-3">4.13. Load Balancing and Server Optimization</h5>
+                <p>
+                    For large websites like The RecipeTadka, especially during peak traffic times, load balancing is crucial to ensure consistent performance. Cookies can be used to direct a user's requests to a specific server in a server farm, ensuring that no single server becomes overloaded. This helps distribute traffic evenly across our infrastructure, maintaining fast page load times and preventing service interruptions. These cookies are typically session-based and do not store personal information; their function is purely technical, optimizing the distribution of network traffic to provide you with a smooth and uninterrupted browsing experience. They are fundamental to the scalability and reliability of our website, ensuring that our sizzling recipes are always accessible.
+                </p>
+
+                <h5 class="text-xl md:text-2xl font-bold text-sizzling-orange mt-6 mb-3">4.14. User-Generated Content Management (e.g., "Your Tadka Twist")</h5>
+                <p>
+                    When you submit your "Your Tadka Twist" recipes, photos, or comments, cookies may be used to manage and track these submissions. For instance, a cookie might remember your submission status, or temporarily store data if a submission process is multi-step. This helps ensure that your contributions are properly processed and attributed. While the content itself is what you explicitly provide, cookies facilitate the technical workflow of receiving and publishing that content, ensuring a smooth experience for users who wish to share their culinary innovations with our community. These cookies are integral to the functionality of interactive features on our site, making it easy for you to engage and contribute.
+                </p>
+
+                <h5 class="text-xl md:text-2xl font-bold text-sizzling-orange mt-6 mb-3">4.15. Newsletter Subscription Management</h5>
+                <p>
+                    Cookies can assist in managing your newsletter subscription preferences. For example, after you sign up for our "Zaika Journal" newsletter, a cookie might be set to prevent the subscription pop-up from appearing repeatedly on subsequent visits, or to confirm your subscription status. This enhances your browsing experience by removing redundant prompts. These cookies help us streamline our communication with you, ensuring that you receive relevant updates and offers without unnecessary interruptions. They are a small but effective way to manage user interactions related to our marketing communications, ensuring a more personalized and less intrusive experience for our subscribers.
+                </p>
+
+                <h5 class="text-xl md:text-2xl font-bold text-sizzling-orange mt-6 mb-3">4.16. Affiliate Marketing Tracking</h5>
+                <p>
+                    If The RecipeTadka engages in affiliate marketing, cookies are essential for tracking referrals. When you click on an affiliate link on our site that leads to a third-party product or service (e.g., a link to purchase a specific spice blend on an e-commerce site), a cookie is placed on your device. This cookie records that you originated from our site, allowing the affiliate partner to attribute any subsequent purchase to our referral. This mechanism is crucial for us to earn commissions, which in turn supports the free content we provide. These cookies typically have a limited lifespan and do not collect personal identifying information beyond the referral source, focusing solely on tracking the user journey for compensation purposes.
+                </p>
+
+                <h5 class="text-xl md:text-2xl font-bold text-sizzling-orange mt-6 mb-3">4.17. Compliance with Legal Obligations (e.g., GDPR, CCPA)</h5>
+                <p>
+                    In an increasingly regulated digital environment, cookies are fundamental for ensuring The RecipeTadka complies with various data protection laws, such as the General Data Protection Regulation (GDPR) in Europe and the California Consumer Privacy Act (CCPA) in the United States. For example, a cookie is used to record your consent preferences (e.g., whether you accepted or declined certain cookie categories) so that we can honor your choices on subsequent visits. This "consent cookie" ensures that our website operates in accordance with legal requirements regarding user privacy and data collection. Without such cookies, we would be unable to effectively manage and demonstrate compliance with these crucial regulations, which are designed to protect your data rights.
+                </p>
+
+                <h5 class="text-xl md:text-2xl font-bold text-sizzling-orange mt-6 mb-3">4.18. Content Personalization Based on Location</h5>
+                <p>
+                    While we do not collect precise geolocation without explicit consent, cookies can help us infer general location information (e.g., country or region based on IP address). This allows us to potentially personalize content based on regional relevance. For instance, if we have specific recipes or blog posts that are more popular or relevant to users in a particular country, cookies can help us prioritize that content for users from that region. This enhances the user experience by presenting information that is more likely to be of interest, making The RecipeTadka feel more tailored to your local culinary context. This personalization is always done in a way that respects your privacy and general location data.
+                </p>
+
+                <h5 class="text-xl md:text-2xl font-bold text-sizzling-orange mt-6 mb-3">4.19. Remembering Search History and Filters</h5>
+                <p>
+                    Cookies can store your recent search queries and applied filters within our recipe database. If you search for "Dal Tadka" and apply a "Spicy AF" filter, a cookie can remember these settings. The next time you visit our recipe search page, these previous searches or filters might be pre-filled or suggested, saving you time and effort. This feature is designed to streamline your content discovery process, making it quicker and more efficient to find the recipes that truly match your current culinary interests. It's a subtle but effective way to enhance the usability of our search functionality and improve your overall browsing experience.
+                </p>
+
+                <h5 class="text-xl md:text-2xl font-bold text-sizzling-orange mt-6 mb-3">4.20. User Feedback and Survey Management</h5>
+                <p>
+                    When we conduct user surveys or solicit feedback, cookies can be used to manage your participation. For example, a cookie might prevent the same survey from appearing repeatedly if you have already completed it or opted out. They can also help us track the progress of a multi-page survey. This ensures that our feedback mechanisms are not intrusive and that we collect unique, valuable insights from our users without annoying them with repetitive requests. The data collected through surveys is used to improve The RecipeTadka's content and features, and cookies simply facilitate the smooth operation of these feedback processes.
+                </p>
+
+                <h4 class="text-2xl md:text-3xl font-bold text-curry-leaf-green mt-10 mb-4">5. First-Party vs. Third-Party Cookies</h4>
+
+                <h5 class="text-xl md:text-2xl font-bold text-sizzling-orange mt-6 mb-3">5.1. First-Party Cookies Explained (Set by RecipeTadka)</h5>
+                <p>
+                    First-party cookies are those cookies that are set directly by the website you are visiting, which in this case is The RecipeTadka (www.recipetadka.com). These cookies are typically used to enable core functionalities of the site, such as remembering your login status, storing your site preferences (like language or measurement units), or managing your shopping cart (if applicable). They are generally considered less intrusive than third-party cookies because they are only accessible by the domain that set them, meaning only The RecipeTadka can read the information stored in its first-party cookies. They are essential for providing a personalized and efficient user experience within our platform, ensuring that your interactions are smooth and tailored to your needs.
+                </p>
+
+                <h5 class="text-xl md:text-2xl font-bold text-sizzling-orange mt-6 mb-3">5.2. Third-Party Cookies Explained (Set by External Services)</h5>
+                <p>
+                    Third-party cookies are set by a domain other than the one you are visiting. On The RecipeTadka, these cookies are typically placed by external services that we integrate into our website for various purposes, such as analytics, advertising, or social media sharing. For example, if we use Google Analytics to understand website traffic, Google will set a third-party cookie. Similarly, if we embed a video from YouTube or have social media sharing buttons, those platforms may set their own third-party cookies. These cookies can track your browsing activity across different websites, not just The RecipeTadka, to build a more comprehensive profile of your interests. This cross-site tracking is why third-party cookies are often the focus of privacy concerns and regulations.
+                </p>
+
+                <h5 class="text-xl md:text-2xl font-bold text-sizzling-orange mt-6 mb-3">5.3. Examples of Third-Party Services (Google Analytics, Ad Networks, Social Media)</h5>
+                <p>
+                    To provide a better understanding, here are common examples of third-party services that may set cookies on your device when you visit The RecipeTadka:
+                    <ul class="list-disc list-inside ml-6 space-y-2 mt-2">
+                        <li>**Google Analytics:** Used for website traffic analysis, helping us understand how users engage with our site.</li>
+                        <li>**Google Ads / AdSense:** For displaying relevant advertisements and measuring ad campaign performance.</li>
+                        <li>**Social Media Platforms (e.g., Facebook, Instagram, Pinterest):** When you use sharing buttons or view embedded content from these platforms, they may set cookies to track your interaction and personalize content on their sites.</li>
+                        <li>**Content Delivery Networks (CDNs):** While primarily for performance, some CDNs might use cookies for specific functionalities.</li>
+                        <li>**Embedded Video Players (e.g., YouTube, Vimeo):** If we embed videos, the video hosting service may set cookies.</li>
+                    </ul>
+                    These services help us enhance our site's functionality, reach a wider audience, and understand user behavior, but they operate under their own privacy policies.
+                </p>
+
+                <h5 class="text-xl md:text-2xl font-bold text-sizzling-orange mt-6 mb-3">5.4. Implications of Third-Party Cookies on Privacy</h5>
+                <p>
+                    The use of third-party cookies raises specific privacy implications due to their ability to track users across multiple websites. Unlike first-party cookies, which are confined to a single domain, third-party cookies can create a more extensive profile of your online activities by aggregating data from various sites you visit. This cross-site tracking allows advertisers and data brokers to build detailed user profiles, which can then be used for highly targeted advertising. While this can result in more relevant ads, it also means that your browsing habits are being monitored by entities beyond the website you are directly interacting with. Understanding these implications is crucial for making informed decisions about your cookie preferences and exercising your right to control your online data.
+                </p>
+
+                <h4 class="text-2xl md:text-3xl font-bold text-curry-leaf-green mt-10 mb-4">6. How We Use Cookies (Specific Examples for RecipeTadka)</h4>
+
+                <h5 class="text-xl md:text-2xl font-bold text-sizzling-orange mt-6 mb-3">6.1. Enhancing Recipe Discovery with Functional Cookies</h5>
+                <p>
+                    At The RecipeTadka, functionality cookies are key to making your recipe discovery process smoother and more intuitive. For instance, if you use our "Tadka Meter" to filter recipes by spice level (Mild, Medium, Spicy AF), a cookie will remember this preference. The next time you visit a recipe category, the site can automatically apply your preferred spice filter, saving you clicks and immediately showing you content tailored to your taste. Similarly, if you've marked certain recipes as "favorites" or added them to a "meal plan" (future feature), these cookies ensure that your selections are remembered across sessions, allowing for a truly personalized culinary journey. This seamless recall of your preferences significantly enhances the usability and enjoyment of our platform.
+                </p>
+
+                <h5 class="text-xl md:text-2xl font-bold text-sizzling-orange mt-6 mb-3">6.2. Optimizing User Experience Through A/B Testing</h5>
+                <p>
+                    We continuously strive to improve The RecipeTadka, and A/B testing is a vital tool in this process. Cookies are instrumental here: they ensure that a user consistently sees the same version (A or B) of a specific page element or feature throughout their visit. For example, we might test two different layouts for our "Recipe Categories" section or two variations of a "View Recipes" button. Cookies prevent you from seeing a mix of versions, which would skew our data. By tracking which version leads to better engagement, longer session durations, or higher conversion rates (e.g., more recipe views), we can make data-driven decisions to optimize our site's design and functionality, ensuring you always get the best possible experience.
+                </p>
+
+                <h5 class="text-xl md:text-2xl font-bold text-sizzling-orange mt-6 mb-3">6.3. Measuring Engagement with "Quick Tadka Reels"</h5>
+                <p>
+                    Our "Quick Tadka Reels" are designed to be engaging and informative. Performance cookies help us measure their effectiveness. These cookies track metrics such as how many times a reel is played, the average watch time, whether users share the reel, and if they click through to the full recipe after watching. This aggregated and anonymous data provides insights into which types of reels resonate most with our audience, allowing us to produce more of the content you love. It helps us understand the impact of sizzling sound effects and quick visual guides on user engagement, ensuring that our short-form video content is always impactful and inspiring.
+                </p>
+
+                <h5 class="text-xl md:text-2xl font-bold text-sizzling-orange mt-6 mb-3">6.4. Personalizing "Masala Match" Suggestions</h5>
+                <p>
+                    The "Masala Match" feature, which suggests recipes based on spices you have, can be further enhanced by cookies. While the immediate suggestions are based on your current input, persistent cookies can remember your past "Masala Match" queries. This allows us to refine future suggestions or even offer proactive recommendations based on frequently entered spice combinations. For example, if you often search with "Cumin, Turmeric, Coriander," the system might prioritize recipes using these spices in future interactions. This personalization makes the "Masala Match" feature even more intuitive and helpful over time, truly making it feel like your personal culinary assistant.
+                </p>
+
+                <h5 class="text-xl md:text-2xl font-bold text-sizzling-orange mt-6 mb-3">6.5. Facilitating "Your Tadka Twist" Submissions</h5>
+                <p>
+                    When you use the "Your Tadka Twist" feature to share your culinary creations, cookies can play a role in streamlining the submission process. For instance, if the submission form is multi-step, session cookies can temporarily store your input as you move from one step to the next, preventing data loss if you accidentally navigate away. If you are logged in, an authentication cookie ensures that your submission is correctly associated with your user account. These cookies contribute to a smooth and reliable user experience for content creators, making it easier for you to share your unique "tadka" with the RecipeTadka community and inspire others.
+                </p>
+
+                <h5 class="text-xl md:text-2xl font-bold text-sizzling-orange mt-6 mb-3">6.6. Managing Newsletter Pop-Up Frequency</h5>
+                <p>
+                    To ensure a non-intrusive browsing experience, cookies are used to manage the display frequency of our newsletter subscription pop-ups. Once you have seen the pop-up and either subscribed or dismissed it, a cookie can be set to prevent it from reappearing for a certain period (e.g., 30 days). This prevents repetitive prompts and allows you to browse our content without interruption. This functionality cookie enhances user comfort by respecting your interaction with our marketing elements, ensuring that our efforts to grow our "Zaika Journal" readership are balanced with a smooth user experience.
+                </p>
+
+                <h5 class="text-xl md:text-2xl font-bold text-sizzling-orange mt-6 mb-3">6.7. Tracking Downloads of Bonus Features</h5>
+                <p>
+                    When you download our "Downloadable Spice Blend Recipes" or "Printables: Weekly Meal Plan," cookies can be used to track the popularity of these bonus features. This helps us understand which resources are most valuable to our users. For example, a cookie might record that you initiated a download, allowing us to aggregate data on the total number of downloads for a specific printable. This information is typically anonymous and helps us refine our content strategy, ensuring we continue to provide valuable and sought-after resources to our community. It helps us gauge interest in different types of culinary aids beyond just recipes.
+                </p>
+
+                <h5 class="text-xl md:text-2xl font-bold text-sizzling-orange mt-6 mb-3">6.8. Remembering "Tadka Meter" Preferences</h5>
+                <p>
+                    The "Tadka Meter" is a unique feature that allows you to filter recipes by spice level (Mild, Medium, Spicy AF). A functionality cookie can remember your last selected spice preference. For instance, if you consistently browse "Spicy AF" recipes, the next time you visit a recipe category, the site might automatically apply this filter, saving you the step of re-selecting it. This personalization ensures that the content presented to you is always aligned with your desired heat level, making your culinary exploration more efficient and enjoyable. It's a small but significant detail that enhances the user's control over their content experience.
+                </p>
+
+                <h5 class="text-xl md:text-2xl font-bold text-sizzling-orange mt-6 mb-3">6.9. Optimizing Content Delivery Based on Region</h5>
+                <p>
+                    While we do not collect precise location data, cookies can help us infer a general region (e.g., country or state) based on your IP address. This allows us to potentially optimize content delivery by prioritizing recipes or blog posts that are culturally or regionally more relevant. For example, if we have a special feature on South Indian cuisine, users identified as being in South India might see this content more prominently. This helps us ensure that the content you receive is as pertinent and engaging as possible, enhancing your overall experience by tailoring it to your inferred regional culinary interests.
+                </p>
+
+                <h5 class="text-xl md:text-2xl font-bold text-sizzling-orange mt-6 mb-3">6.10. Facilitating Social Sharing Buttons</h5>
+                <p>
+                    The social media sharing buttons on our site (e.g., for Facebook, Pinterest, Instagram) utilize third-party cookies. When you click these buttons, the respective social media platform may place a cookie on your device. These cookies enable the sharing functionality and may track your interaction with the button. They help the social media platforms understand what content you are sharing and can influence the content and ads you see on their platforms. While we integrate these buttons to make it easy for you to share our delicious recipes, the data collected by these third-party cookies is governed by the privacy policies of the respective social media companies.
+                </p>
+
+                <h5 class="text-xl md:text-2xl font-bold text-sizzling-orange mt-6 mb-3">6.11. Remembering Your Cookie Consent Choices</h5>
+                <p>
+                    Crucially, a specific cookie is used to remember your cookie consent preferences. When you interact with our cookie consent banner (accepting, declining, or customizing), a small cookie is set on your device. This cookie's sole purpose is to record your choice so that you are not prompted with the banner on every subsequent visit to The RecipeTadka website. This is a strictly necessary cookie, as it ensures our compliance with data privacy regulations and provides a smooth, uninterrupted browsing experience once you have made your initial choice. Without this cookie, the consent banner would reappear incessantly, diminishing your user experience.
+                </p>
+
+                <h5 class="text-xl md:text-2xl font-bold text-sizzling-orange mt-6 mb-3">6.12. Tracking Referral Sources for Analytics</h5>
+                <p>
+                    Performance cookies help us understand how users arrive at The RecipeTadka. These cookies track referral sources, meaning they record if you came to our site from a search engine, a social media link, another website, or a direct link. This information is invaluable for our marketing and content strategy, as it helps us identify which channels are most effective in driving traffic to our site. By analyzing referral data, we can better understand where our audience comes from and optimize our presence on various platforms, ensuring that more food enthusiasts discover our sizzling recipes and engaging content. This data is typically aggregated and does not identify individual users.
+                </p>
+
+                <h5 class="text-xl md:text-2xl font-bold text-sizzling-orange mt-6 mb-3">6.13. Improving Search Functionality and Relevance</h5>
+                <p>
+                    Cookies can play a role in enhancing the search functionality within The RecipeTadka. For example, they might remember your recent search queries (e.g., "biryani," "paneer curry") or frequently used filters. This allows the search bar to offer auto-suggestions or remember your last search parameters, making it quicker for you to find relevant recipes. By analyzing aggregated search data (which is anonymized), we can also identify popular search terms and areas where our content might be lacking, guiding our content creation efforts to better serve your culinary interests. This continuous feedback loop helps us refine our search algorithm for improved relevance and user satisfaction.
+                </p>
+
+                <h5 class="text-xl md:text-2xl font-bold text-sizzling-orange mt-6 mb-3">6.14. Managing User Session State</h5>
+                <p>
+                    Session cookies are fundamental for managing your overall interaction state on The RecipeTadka. For instance, if you are logged into your account, a session cookie maintains your logged-in status as you navigate from one page to another. Without this, you would be prompted to log in on every single page you visit, making the site unusable. These cookies are temporary and are deleted once you close your browser. They ensure a seamless and continuous browsing experience, allowing you to move freely within the site, access your personalized features, and interact with content without interruption, all while maintaining a secure connection.
+                </p>
+
+                <h5 class="text-xl md:text-2xl font-bold text-sizzling-orange mt-6 mb-3">6.15. Facilitating Commenting and Interaction Features</h5>
+                <p>
+                    When you leave comments on our blog posts or recipes, cookies may be used to remember your name, email address, and website (if you choose to provide them). This saves you the effort of re-entering this information every time you wish to comment, streamlining the interaction process. These functionality cookies enhance the user experience for active community members, making it easier to participate in discussions and share your thoughts on our culinary content. They contribute to a more engaging and interactive environment on The RecipeTadka, fostering a vibrant community of food enthusiasts.
+                </p>
+
+                <h5 class="text-xl md:text-2xl font-bold text-sizzling-orange mt-6 mb-3">6.16. Preventing Duplicate Survey Submissions</h5>
+                <p>
+                    To ensure the integrity of our user feedback and survey data, cookies are often deployed to prevent duplicate submissions from the same user. If you complete a survey or provide feedback, a cookie can be set to mark your device as having participated. This prevents the survey prompt from reappearing unnecessarily and ensures that our data accurately reflects unique user opinions. This contributes to more reliable insights into user satisfaction and preferences, helping us make informed decisions about future improvements to The RecipeTadka. It's a small but important technical detail for data quality.
+                </p>
+
+                <h5 class="text-xl md:text-2xl font-bold text-sizzling-orange mt-6 mb-3">6.17. Analyzing Page Scroll Depth and Engagement</h5>
+                <p>
+                    Performance cookies, often in conjunction with analytics tools, can track how far down a page users scroll. This "scroll depth" metric provides valuable insights into content engagement. For example, if many users only scroll halfway down a long recipe page, it might indicate that the most crucial information should be placed higher up, or that the content needs to be broken down differently. This data helps us optimize content structure and placement to ensure that our valuable culinary information is easily consumed and appreciated by our audience. It's a subtle way we use data to enhance the readability and effectiveness of our recipe and blog content.
+                </p>
+
+                <h5 class="text-xl md:text-2xl font-bold text-sizzling-orange mt-6 mb-3">6.18. Supporting Cross-Device User Recognition (Pseudonymous)</h5>
+                <p>
+                    In some cases, through advanced analytics and advertising technologies, cookies (often persistent third-party cookies) can contribute to a pseudonymous understanding of user behavior across different devices. This means that while we don't know your direct identity, we might be able to link your activity on a mobile phone to your activity on a desktop computer, if you use the same browser or are logged into the same third-party service (e.g., Google account) on both. This helps us understand the full user journey, from initial discovery on mobile to deeper engagement on desktop, allowing for more holistic content and marketing optimization. This is always done pseudonymously, without directly identifying you as an individual.
+                </p>
+
+                <h5 class="text-xl md:text-2xl font-bold text-sizzling-orange mt-6 mb-3">6.19. Remembering Video Playback Preferences</h5>
+                <p>
+                    If The RecipeTadka incorporates embedded video content, such as our "Quick Tadka Reels," cookies can remember your video playback preferences. This might include your preferred volume level, playback speed, or whether you prefer subtitles to be on or off. These functionality cookies ensure that your video viewing experience is consistent and tailored to your liking across different sessions. This small convenience contributes to a more enjoyable and accessible multimedia experience on our platform, allowing you to focus on the delicious visuals and sizzling sounds of our culinary demonstrations.
+                </p>
+
+                <h5 class="text-xl md:text-2xl font-bold text-sizzling-orange mt-6 mb-3">6.20. Facilitating User Polls and Quizzes</h5>
+                <p>
+                    If we implement interactive features like user polls or quizzes (e.g., "What's Your Tadka Personality?"), cookies can be used to manage your participation and prevent multiple votes or submissions from the same user. A cookie might record your participation status, ensuring that the results remain accurate and that you are not prompted to take the same poll repeatedly. This enhances the integrity of our interactive content and provides a smoother experience for users engaging with these fun and informative features on The RecipeTadka. It helps us gather genuine insights and keep our content fresh and engaging.
+                </p>
+
+                <h4 class="text-2xl md:text-3xl font-bold text-curry-leaf-green mt-10 mb-4">7. Your Cookie Choices & Management</h4>
+
+                <h5 class="text-xl md:text-2xl font-bold text-sizzling-orange mt-6 mb-3">7.1. Cookie Consent Banner (Initial Choice)</h5>
+                <p>
+                    Upon your first visit to The RecipeTadka, you will encounter a prominent cookie consent banner at the bottom of your screen. This banner provides you with a clear choice regarding our use of cookies. You will have options to "Accept All Cookies," "Decline Non-Essential Cookies," or "Customize Preferences." This initial interaction is crucial for us to obtain your consent for certain cookie categories, particularly those not strictly necessary for the website's basic functionality. We aim to make this process as transparent and user-friendly as possible, ensuring you are fully aware of the data collection practices before proceeding to browse our delicious content. Your choice will be remembered by a necessary cookie for future visits.
+                </p>
+
+                <h5 class="text-xl md:text-2xl font-bold text-sizzling-orange mt-6 mb-3">7.2. Browser Settings for Cookie Control</h5>
+                <p>
+                    Beyond our on-site cookie consent banner, your web browser provides comprehensive tools to manage and control cookies. You can typically find these settings in your browser's "Options," "Preferences," or "Settings" menu, usually under sections like "Privacy," "Security," or "Site Settings." Here, you can:
+                    <ul class="list-disc list-inside ml-6 space-y-2 mt-2">
+                        <li>View all cookies stored on your device.</li>
+                        <li>Delete specific cookies or all cookies.</li>
+                        <li>Block all cookies.</li>
+                        <li>Block third-party cookies only.</li>
+                        <li>Set your browser to notify you when a cookie is being set.</li>
+                    </ul>
+                    These browser-level controls offer a powerful way to manage your privacy across all websites you visit, not just The RecipeTadka. However, be aware that blocking all cookies may impact the functionality of many websites.
+                </p>
+
+                <h5 class="text-xl md:text-2xl font-bold text-sizzling-orange mt-6 mb-3">7.3. Opt-Out Tools for Advertising Networks</h5>
+                <p>
+                    Many advertising networks offer specific opt-out mechanisms that allow you to control the use of cookies for interest-based advertising across multiple websites. Organizations such as the Digital Advertising Alliance (DAA) and the Network Advertising Initiative (NAI) provide consumer opt-out tools. By visiting their respective websites, you can opt out of receiving targeted advertisements from participating companies. While opting out does not mean you will no longer receive online advertising, it means that the ads you see will not be tailored to your interests based on cookie data collected by those specific networks. This provides an additional layer of control over your online advertising experience.
+                </p>
+
+                <h5 class="text-xl md:text-2xl font-bold text-sizzling-orange mt-6 mb-3">7.4. Impact of Disabling Cookies on Site Functionality</h5>
+                <p>
+                    It's important to understand that disabling certain types of cookies, particularly strictly necessary or functionality cookies, may impact your experience on The RecipeTadka. If you block all cookies, you may not be able to log in, save preferences, or use interactive features. The site's performance might also be affected, leading to slower load times or broken elements. While you retain the right to manage your cookie preferences, we advise careful consideration of the potential impact on usability. We strive to provide a rich and engaging culinary experience, and many features rely on cookies to function optimally. We recommend reviewing the types of cookies and their purposes before making broad changes to your settings.
+                </p>
+
+                <h5 class="text-xl md:text-2xl font-bold text-sizzling-orange mt-6 mb-3">7.5. Specific Opt-Outs for Key Services (e.g., Google Analytics)</h5>
+                <p>
+                    For certain widely used third-party services, specific opt-out browser add-ons or tools are available. For example, Google provides a Google Analytics Opt-out Browser Add-on, which prevents Google Analytics from collecting data about your visits to websites. If you wish to opt out of Google Analytics tracking across all websites, installing this add-on is an effective method. Similarly, other major analytics or advertising providers may offer their own dedicated opt-out mechanisms. We encourage you to explore these specific tools if you have particular concerns about data collection by individual third-party services integrated into our site. These provide a more granular control over specific data collection practices.
+                </p>
+
+                <h4 class="text-2xl md:text-3xl font-bold text-curry-leaf-green mt-10 mb-4">8. Legal Compliance & Regulations</h4>
+
+                <h5 class="text-xl md:text-2xl font-bold text-sizzling-orange mt-6 mb-3">8.1. Adherence to GDPR (General Data Protection Regulation)</h5>
+                <p>
+                    The RecipeTadka is committed to adhering to the principles and requirements of the General Data Protection Regulation (GDPR), a comprehensive data privacy law in the European Union. This commitment is reflected in our cookie practices, particularly regarding consent. Under GDPR, we obtain explicit consent for non-essential cookies before placing them on your device. We also provide clear information about the types of cookies used, their purposes, and your rights regarding your data. Our consent banner and policy are designed to meet GDPR's standards for transparency, control, and accountability, ensuring that users in the EEA and UK have robust protections for their personal data related to cookies.
+                </p>
+
+                <h5 class="text-xl md:text-2xl font-bold text-sizzling-orange mt-6 mb-3">8.2. Compliance with CCPA (California Consumer Privacy Act)</h5>
+                <p>
+                    For our users in California, The RecipeTadka also strives to comply with the California Consumer Privacy Act (CCPA). While CCPA's definition of "sale" of data is broad and can include sharing data via certain cookies for advertising purposes, we provide mechanisms for users to opt out of such "sales." Our Privacy Policy, which this Cookie Policy supplements, details your rights under CCPA, including the right to know what personal information is collected, the right to delete, and the right to opt-out of the sale of your personal information. We are dedicated to providing California residents with the transparency and control over their data as mandated by this important legislation.
+                </p>
+
+                <h5 class="text-xl md:text-2xl font-bold text-sizzling-orange mt-6 mb-3">8.3. International Data Transfer Considerations</h5>
+                <p>
+                    As The RecipeTadka is based in the United States, and our servers are located here, data collected via cookies may be transferred to, stored, and processed in the U.S. for users accessing our site from outside the United States. We understand that data protection laws in your country may differ. When transferring data from regions like the EEA or UK, we implement appropriate safeguards, such as standard contractual clauses approved by relevant authorities, to ensure your personal information receives adequate protection comparable to that in your home jurisdiction. By using our site, you consent to such transfers as described in this policy. We are committed to protecting your data regardless of your geographical location.
+                </p>
+
+                <h5 class="text-xl md:text-2xl font-bold text-sizzling-orange mt-6 mb-3">8.4. Regular Review of Legal Landscape</h5>
+                <p>
+                    The legal landscape surrounding data privacy and cookies is dynamic and subject to frequent changes. The RecipeTadka's legal team regularly monitors new regulations, guidelines, and best practices issued by data protection authorities worldwide. This proactive approach ensures that our Cookie Policy and underlying data processing activities remain compliant with the latest legal requirements. We are committed to adapting our practices as necessary to uphold the highest standards of privacy and data protection for our users, ensuring that our approach to cookies is always current, responsible, and respectful of your rights.
+                </p>
+
+                <h5 class="text-xl md:text-2xl font-bold text-sizzling-orange mt-6 mb-3">8.5. Transparency and Accountability</h5>
+                <p>
+                    Transparency and accountability are core values at The RecipeTadka. This Cookie Policy is a testament to our commitment to clearly communicate our data practices. We strive to explain in plain language how cookies are used, what data they collect, and why they are necessary or beneficial for your experience. We are accountable for the cookies we place and the data we collect through them, and we provide clear mechanisms for you to exercise your rights. Our aim is to foster trust with our users by being open about our cookie usage and by providing the necessary tools for you to control your personal information.
+                </p>
+
+                <h4 class="text-2xl md:text-3xl font-bold text-curry-leaf-green mt-10 mb-4">9. Changes to This Cookie Policy</h4>
+
+                <h5 class="text-xl md:text-2xl font-bold text-sizzling-orange mt-6 mb-3">9.1. Notification of Policy Updates</h5>
+                <p>
+                    As our website evolves and new technologies emerge, we may need to update this Cookie Policy. We will notify you of any material changes by posting the revised policy on this page with an updated "Effective Date" at the top. For significant changes that might affect your rights or the way we use cookies, we may also provide more prominent notice, such as through a banner on our website or by sending an email to registered users. We encourage you to review this policy periodically to stay informed about our cookie practices. Your continued use of The RecipeTadka after any changes to this policy implies your acceptance of the updated terms.
+                </p>
+
+                <h4 class="text-2xl md:text-3xl font-bold text-curry-leaf-green mt-10 mb-4">10. Contact Information & Policy Review</h4>
+
+                <h5 class="text-xl md:text-2xl font-bold text-sizzling-orange mt-6 mb-3">10.1. How to Contact Us Regarding Cookies</h5>
+                <p>
+                    Your privacy is important to us, and we are here to address any questions or concerns you may have about our Cookie Policy or our cookie practices. If you require further clarification, wish to exercise your data rights, or have any feedback regarding how we use cookies, please do not hesitate to contact us. You can reach our dedicated privacy team through the following channels:
+                    <ul class="list-disc list-inside ml-6 space-y-2 mt-2">
+                        <li><strong>By Email:</strong> For detailed inquiries, please email us at <a href="mailto:privacy@recipetadka.com" class="text-sizzling-orange hover:underline">privacy@recipetadka.com</a>. We aim to respond to all emails within 2-3 business days.</li>
+                        <li><strong>By Mail:</strong> You can send written correspondence to our legal department at:<br>
+                            The RecipeTadka Legal Department<br>
+                            123 Spice Route, Flavorville,<br>
+                            CA 90210, United States
+                        </li>
+                        <li><strong>By Phone:</strong> For urgent matters, you may call us at <a href="tel:+15551234567" class="text-sizzling-orange hover:underline">+1 (555) 123-4567</a>. Please note that for detailed privacy requests, email is often preferred for record-keeping and comprehensive responses.</li>
+                    </ul>
+                    We are committed to resolving any concerns promptly and transparently.
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Cookie Consent Dialog Box -->
+    <div id="cookie-consent-dialog">
+        <p>
+            We use cookies to enhance your browsing experience, serve personalized ads or content, and analyze our traffic. By clicking "Accept All," you consent to our use of cookies. You can manage your preferences or learn more by clicking "Learn More."
+        </p>
+        <div class="cookie-buttons">
+            <button class="accept-button" onclick="acceptCookies()">Accept All</button>
+            <button class="decline-button" onclick="declineCookies()">Decline Non-Essential</button>
+            <button class="learn-more-button" onclick="window.location.href='cookies.html'">Learn More</button>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white py-8 px-6 md:px-12 rounded-t-xl shadow-inner mt-auto">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+            <div class="mb-4 md:mb-0">
+                <h4 class="text-xl font-bold text-sizzling-orange mb-2">The RecipeTadka</h4>
+                <p class="text-gray-400">Where Every Dish Sizzles With Flavor.</p>
+            </div>
+            <div class="mb-4 md:mb-0">
+                <h4 class="text-xl font-bold text-sizzling-orange mb-2">Connect With Us</h4>
+                <p class="text-gray-400">
+                    Email: info@recipetadka.com <br>
+                    Phone: +1 (555) 123-4567
+                </p>
+            </div>
+            <div>
+                <h4 class="text-xl font-bold text-sizzling-orange mb-2">Our Location</h4>
+                <address class="not-italic text-gray-400">
+                    123 Spice Route, Flavorville, <br>
+                    CA 90210, United States
+                </address>
+            </div>
+        </div>
+        <div class="border-t border-gray-700 mt-8 pt-6 text-center text-gray-500 text-sm">
+            &copy; 2025 The RecipeTadka. All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        // Function to set a cookie
+        function setCookie(name, value, days) {
+            let expires = "";
+            if (days) {
+                const date = new Date();
+                date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                expires = "; expires=" + date.toUTCString();
+            }
+            document.cookie = name + "=" + (value || "") + expires + "; path=/; SameSite=Lax";
+        }
+
+        // Function to get a cookie
+        function getCookie(name) {
+            const nameEQ = name + "=";
+            const ca = document.cookie.split(';');
+            for(let i=0; i < ca.length; i++) {
+                let c = ca[i];
+                while (c.charAt(0) === ' ') c = c.substring(1, c.length);
+                if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
+            }
+            return null;
+        }
+
+        // Function to accept cookies
+        function acceptCookies() {
+            setCookie('recipetadka_cookie_consent', 'accepted', 365); // Cookie lasts for 1 year
+            document.getElementById('cookie-consent-dialog').style.display = 'none';
+            // Here you would typically load analytics scripts, tracking pixels etc.
+            // For this example, we'll just hide the dialog.
+            console.log("Cookies accepted.");
+        }
+
+        // Function to decline cookies
+        function declineCookies() {
+            setCookie('recipetadka_cookie_consent', 'declined', 365); // Cookie lasts for 1 year
+            document.getElementById('cookie-consent-dialog').style.display = 'none';
+            // Here you would typically disable non-essential cookies, analytics etc.
+            console.log("Non-essential cookies declined.");
+        }
+
+        // Check cookie consent status on page load
+        window.onload = function() {
+            const consent = getCookie('recipetadka_cookie_consent');
+            if (consent) {
+                document.getElementById('cookie-consent-dialog').style.display = 'none';
+            } else {
+                document.getElementById('cookie-consent-dialog').style.display = 'flex';
+            }
+        };
+    </script>
+</body>
+</html>
